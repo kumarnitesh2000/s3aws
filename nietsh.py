@@ -31,8 +31,13 @@ def min_geo(partner_list,loc):
 
 partner_list=[]
 with open("file.csv","r") as f:
+    print('type of the csv reader : ', f)
+
     csv_reader=csv.reader(f)
+
     for row in csv_reader:
+
+
         partner_list.append(row)
 
 
