@@ -1,0 +1,15 @@
+https://dluo.me/s3databoto3      (reading the data from the csv file from s3bucket)
+
+https://medium.com/@qtangs/creating-new-aws-lambda-layer-for-python-pandas-library-348b126e9f3e
+
+(tell about how to use layers in aws lambda function)
+
+
+
+
+https://www.devdungeon.com/content/working-binary-data-python
+
+(play with bytes in python)
+
+
+https://www.w3resource.com/python/python-bytes.php   (bytes to the string)
