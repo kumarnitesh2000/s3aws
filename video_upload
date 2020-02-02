@@ -1,0 +1,40 @@
+
+import base64
+import datetime
+import requests
+import json
+
+f=open("vid.mp4","rb")
+encoded_string=base64.b64encode(f.read())
+req_file=encoded_string.decode("utf-8")
+
+payload={
+"req_file":req_file
+
+
+}
+'''
+url="https://ybmldjafw8.execute-api.us-east-1.amazonaws.com/test/vid"
+r=requests.post(url,json.dumps({
+    
+    "req_file":req_file,
+    "is_Vid":True
+}))
+
+print(r.json())
+'''
+#payload['req_file'] is our video content
+
+with open("filefin.mp4","wb") as f:
+  f.write(base64.b64decode(payload['req_file']))
+
+f.close()
+
+
+
+
+
+
+
+
+
